@@ -1,0 +1,791 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="author" content="http://www.fractal-technology.com">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>考考你，曲艺知识知多少</title>
+<script src="Public/static/themes_qyz/js/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Public/static/themes_qyz/css/main.css">
+<script src="Public/static/themes_qyz/js/jquery.fullPage.min.js"></script>
+<script src="Public/static/themes_qyz/js/imagesloaded.pkgd.min.js"></script>
+<script src="Public/static/themes_qyz/js/html2canvas.min.js"></script>
+<script src="Public/static/themes_qyz/js/ua-parser.min.js"></script>
+<script src="Public/static/themes_qyz/js/canvas2image.js"></script>
+<script src="Public/static/themes_qyz/js/slick.min.js"></script>
+<script src="Public/static/themes_qyz/js/gsap.min.js"></script>
+<script src="Public/static/themes_qyz/js/main.js"></script>
+</head>
+
+<body>
+<audio class="bgm1" src="Public/static/themes_qyz/media/bgm1.mp3" preload autoplay></audio>
+<audio class="bgm" src="Public/static/themes_qyz/media/bgm2.mp3" preload loop></audio>
+<audio class="yes" src="Public/static/themes_qyz/media/yes.mp3" preload></audio>
+<audio class="no" src="Public/static/themes_qyz/media/no.mp3" preload></audio>
+
+<div class="bgplay"></div>
+    
+<<div class="pop-mod pop-loader">
+	<div class="pop-panel">
+		<div class="pop-dialog">
+			<div class="pop-cont">
+				<div class="img"><img src="Public/static/themes_qyz/img/png1.png" alt="" class="i"></div>
+				<div class="p" data-iload="0">0%</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <
+<div class="pop-mod pop-score">
+	<div class="back"></div>
+	<div class="pop-panel ldbg">
+		<div class="pop-dialog">
+			<div class="pop-cont">
+				<div class="bg1"><img class="plimg" data-preload="Public/static/themes_qyz/img/png14.png" src="" alt=""></div>
+				<div class="bg2"><img class="plimg" data-preload="Public/static/themes_qyz/img/png15.png" src="" alt=""></div>
+				<div class="lv"></div>
+				<div class="p1"></div>
+				<div class="p2"></div>
+				<a href="http://www.ihchina.cn/" target="_blank" class="link"></a>
+				<div class="btn"></div>
+				<div class="simg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+    
+<div class="exam-box">
+	<div class="exam-item exam1 now">
+		<div class="panel pq">
+			<div class="tip">小知识：什么是曲艺？——曲艺是演员以本色身份采用口头语言“说唱”叙述的表演艺术门类。</div>
+			<div class="box">
+				<div class="topic">
+					<div class="q"><span class="s">问题：</span>根据上面的介绍，你认为下列哪4个非遗项目属于曲艺：</div>
+				</div>
+				<div class="option mc">
+					<div class="option-item">A.西河大鼓</div>
+					<div class="option-item">B.侗族大歌</div>
+					<div class="option-item">C.粤剧</div>
+					<div class="option-item">D.赫哲族伊玛堪</div>
+					<div class="option-item">E.河北梆子</div>
+					<div class="option-item">F.相声</div>
+					<div class="option-item">G.秦腔</div>
+					<div class="option-item">H.北京评书</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">1/8</span>题</div>
+				<div class="btn submit" data-key="[0,3,5,7]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">A.西河大鼓 D.赫哲族伊玛堪 F.相声 H.北京评书</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">上述4个项目，其演员都以本色身份出现在观众面前，进行第三人称统领的口语“说唱”叙述，即便要表现故事中人物的言行举止，也仅是通过口吻、语音、动作、神态等进行模拟和演示。</div>
+						<div class="p">而其他选项中，侗族大歌为传统音乐类非遗项目，粤剧、河北梆子、秦腔为容易混淆的传统戏剧类非遗项目。对于传统戏剧而言，演员以“扮演”形式化装成故事中的人物进行角色化代言模仿，这是它与曲艺的显著区别。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam2">
+		<div class="panel pq">
+			<div class="tip">小知识：曲艺的分类大致有哪些？——我国品类繁多、异彩纷呈的曲艺形式，依照艺术审美的功能特点，总体而言可以分为“说书”“唱曲”和“谐趣”三大类型。“说书”类的曲种擅长叙事，“唱曲”类的曲种长于抒情，“谐趣”类的曲种偏重说理。</div>
+			<div class="box">
+				<div class="topic">
+					<div class="q"><span class="s">问题：</span>根据上面的介绍和你的了解，下列曲艺项目分类正确的是：</div>
+				</div>
+				<div class="option sc">
+					<div class="option-item">A.说书：苏州弹词、山东琴书<br>&nbsp;&nbsp;唱曲：四川清音、梅花大鼓<br>&nbsp;&nbsp;谐趣：数来宝、独脚戏</div>
+					<div class="option-item">B.说书：山东琴书、数来宝<br>&nbsp;&nbsp;唱曲：苏州弹词、四川清音<br>&nbsp;&nbsp;谐趣：梅花大鼓、独脚戏</div>
+					<div class="option-item">C.说书：苏州弹词、独脚戏<br>&nbsp;&nbsp;唱曲：四川清音、梅花大鼓<br>&nbsp;&nbsp;谐趣：山东琴书、数来宝</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">2/8</span>题</div>
+				<div class="btn submit" data-key="[0]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">A.说书：苏州弹词、山东琴书<br>&nbsp;&nbsp;唱曲：四川清音、梅花大鼓<br>&nbsp;&nbsp;谐趣：数来宝、独脚戏</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam3">
+		<div class="panel pq">
+			<div class="box">
+				<div class="topic">
+					<div class="q"><span class="s">问题：</span>图中的表演形式更像是下列哪个曲艺项目？</div>
+					<div class="pic"><img class="plimg" data-preload="Public/static/themes_qyz/img/png16.png" src="" alt=""></div>
+				</div>
+				<div class="option sc">
+					<div class="option-item">A.莲花落</div>
+					<div class="option-item">B.凤阳花鼓</div>
+					<div class="option-item">C.山东大鼓</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">3/8</span>题</div>
+				<div class="btn submit" data-key="[2]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">C.山东大鼓</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">山东大鼓是我国北方现存最早的曲艺鼓书暨鼓曲形式，最初只是敲击犁铧碎片伴奏，采用山东方言来演唱当地的民歌小调，后逐渐发展为有板式变化的成套唱腔、敲击矮脚鼓和特制半月形梨花片并有三弦伴奏的“说唱”表演形式。</div>
+						<div class="b">图中演员：祝天月。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam4">
+		<div class="panel pq">
+			<div class="box">
+				<div class="topic">
+					<div class="q"><span class="s">问题：</span>图中的曲艺表演形式主要分布在我国的什么地区？</div>
+					<div class="pic"><img class="plimg" data-preload="Public/static/themes_qyz/img/img12.jpg" src="" alt=""></div>
+				</div>
+				<div class="option sc">
+					<div class="option-item">A.北方</div>
+					<div class="option-item">B.南方</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">4/8</span>题</div>
+				<div class="btn submit" data-key="[1]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">B.南方</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">这个国家级非遗代表性项目是苏州评弹（苏州评话、苏州弹词），图中表演的是苏州弹词。苏州弹词是以说唱相间的方式，用苏州方言表演的“小书”类曲艺说书形式，发源并流行于以苏州为中心的江苏东南部、浙江北部和上海等吴语方言区。由于和苏州评话同属说书行业，曾经拥有共同的行会组织，民间习惯性地将其与苏州评话合称为“苏州评弹”。</div>
+						<div class="b">图中演员：金丽生（左）、张敏（右）。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam5">
+		<div class="panel pq">
+			<div class="box">
+				<div class="topic">
+					<div class="q"><span class="s">问题：</span>琵琶用于以下哪个曲艺项目的伴奏？（多选）</div>
+					<div class="pic"><img class="plimg" data-preload="Public/static/themes_qyz/img/img13.jpg" src="" alt=""></div>
+				</div>
+				<div class="option mc">
+					<div class="option-item">A.粤曲</div>
+					<div class="option-item">B.四川清音</div>
+					<div class="option-item">C.常德丝弦</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">5/8</span>题</div>
+				<div class="btn submit" data-key="[0,1,2]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">A.粤曲 B.四川清音 C.常德丝弦</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">四川清音因演唱时多用月琴或琵琶伴奏，又叫“唱月琴”“唱琵琶”。</div>
+						<div class="p">粤曲表演形式为一至二人演唱，另有多人分持高胡、扬琴、琵琶、横箫、长喉管、二弦、提琴（一种广东本地的民间乐器）、短喉管、月琴等专司伴奏。</div>
+						<div class="p">常德丝弦因用扬琴、琵琶、月琴、三弦、二胡、京胡等丝弦乐器伴奏而得名，传统表演形式为多人分持扬琴、鼓板、京胡、二胡、三弦和琵琶等围坐一圈，轮递说唱。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam6">
+		<div class="panel pq">
+			<div class="box">
+				<div class="topic">
+					<div class="q"><span class="s">问题：</span>蒙古四胡用于以下哪个曲艺项目的伴奏？</div>
+					<div class="pic"><img class="plimg" data-preload="Public/static/themes_qyz/img/img14.jpg" src="" alt=""></div>
+				</div>
+				<div class="option sc">
+					<div class="option-item">A.好来宝</div>
+					<div class="option-item">B.数来宝</div>
+					<div class="option-item">C.龙舟说唱</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">6/8</span>题</div>
+				<div class="btn submit" data-key="[0]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">A.好来宝</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">好来宝意为“连韵说唱”，主要流传于内蒙古科尔沁草原及周边地区，演出时演员多用蒙古四胡自拉自唱，多人好来宝则用小乐队伴奏。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam7">
+		<div class="panel pq">
+			<div class="box">
+				<div class="topic">
+					<div class="q">听音频猜项目：你听到的这段作品节选，属于哪种曲艺形式？</div>
+					<div class="sound ldbg"><img class="plimg" data-preload="Public/static/themes_qyz/img/img15.jpg" src="" alt=""><audio class="ad" src="Public/static/themes_qyz/media/lkdy.mp3" preload></audio></div>
+				</div>
+				<div class="option sc">
+					<div class="option-item">A.粤曲</div>
+					<div class="option-item">B.二人转</div>
+					<div class="option-item">C.河南坠子</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">7/8</span>题</div>
+				<div class="btn submit" data-key="[2]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">C.河南坠子</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">该音频为河南坠子节目《李逵夺鱼》选段。</div>
+						<div class="b">演述人：刘宗琴。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">下一题</div>
+			</div>
+		</div>
+	</div>
+	<div class="exam-item exam8">
+		<div class="panel pq">
+			<div class="box">
+				<div class="topic">
+					<div class="q">听音频猜项目：你听到的这段作品节选，属于哪种曲艺形式？</div>
+					<div class="sound ldbg"><img class="plimg" data-preload="Public/static/themes_qyz/img/img15.jpg" src="" alt=""><audio class="ad" src="Public/static/themes_qyz/media/fh.mp3" preload></audio></div>
+				</div>
+				<div class="option sc">
+					<div class="option-item">A.山东琴书</div>
+					<div class="option-item">B.北京评书</div>
+					<div class="option-item">C.天津快板</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="step">第<span class="en">8/8</span>题</div>
+				<div class="btn submit" data-key="[0]">确定</div>
+			</div>
+		</div>
+		<div class="panel pa">
+			<div class="box">
+				<div class="topic"></div>
+				<div class="dl">
+					<div class="dt">正确答案：</div>
+					<div class="dd">A.山东琴书</div>
+				</div>
+				<div class="dl">
+					<div class="dt">解答：</div>
+					<div class="dd">
+						<div class="p">该音频为山东琴书节目《反话》选段。</div>
+						<div class="b">演述人：朱丽华、耿殿生；伴奏：贺长煜、张济祥、刘丕端、张慧。</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="btn next">查看得分</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="fullpage">
+	<div class="section page1 ldbg">
+		<div class="am-pos am1"><img class="plimg am-item" data-preload="Public/static/themes_qyz/img/png5.png" src="" alt=""></div>
+		<div class="am-pos am2"><img class="plimg am-item" data-preload="Public/static/themes_qyz/img/png6.png" src="" alt=""></div>
+		<div class="am-pos am3"><img class="plimg am-item" data-preload="Public/static/themes_qyz/img/png4.png" src="" alt=""></div>
+	</div>
+	<div class="section page2 ldbg">
+		<div class="am-pos">
+			<div class="am-box">
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk1.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk4.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk5.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk6.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk7.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk8.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk9.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk10.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk11.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk12.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk13.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk14.png" src="" alt=""></div>
+				<div class="am-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/talk15.png" src="" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="section page3 ldbg">
+		<div class="am-pos am1"><img class="plimg am-item ai1" data-preload="Public/static/themes_qyz/img/png7.png" src="" alt=""></div>
+		<div class="am-pos am2"><img class="plimg am-item ai2" data-preload="Public/static/themes_qyz/img/png8.png" src="" alt=""><img class="plimg am-item ai3" data-preload="Public/static/themes_qyz/img/png9.png" src="" alt=""></div>
+	</div>
+	<div class="section page4 ldbg"></div>
+	<div class="section page5 ldbg">
+		<div class="unit">
+			<img class="plimg txt" data-preload="Public/static/themes_qyz/img/png13.png" src="" alt="">
+			<div class="slick-mod">
+				<div class="slick-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/png10.png" src="" alt=""></div>
+				<div class="slick-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/png11.png" src="" alt=""></div>
+				<div class="slick-item"><img class="plimg" data-preload="Public/static/themes_qyz/img/png12.png" src="" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="section page6 ldbg">
+		<div class="start"></div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+	$(function(){
+
+		var score = 0;
+
+		audioAutoPlay('.bgm1');
+		audioAutoPlay('.bgm', true);
+
+		function bgplay() {
+			$('.bgm')[0].play();
+			document.removeEventListener("touchstart", bgplay, false);
+		};
+
+		$('.page5 .slick-mod').slick({
+			arrows: false,
+			dots: true
+		});
+
+		$('.bgplay').on('click', function(){
+			var $this = $(this);
+
+			if($this.hasClass('cur')){
+				$this.removeClass('cur');
+				$('.bgm')[0].pause();
+			}else{
+				$this.addClass('cur');
+				$('.bgm')[0].play();
+			}
+		});
+
+		$('.pop-score .back').on('click', function(){
+			$('.pop-score').removeClass('shot');
+		});
+
+		$('.pop-score .simg').on('touchmove', function(e){
+			e.stopPropagation();
+		});
+
+		$('.pop-score .btn').on('click', getimg);
+
+		$('.exam-item .sound').on('click', function(){
+			var $this = $(this),
+					ad = $this.find('.ad')[0];
+
+			if(!$this.hasClass('play')){
+				$this.addClass('play');
+				ad.play();
+			}else{
+				$this.removeClass('play');
+				ad.pause();
+			}
+		});
+
+		$('.exam-item .submit').on('click', function(){
+			var $this = $(this),
+					$exam = $this.closest('.exam-item'),
+					$item = $this.closest('.panel').find('.option-item'),
+					$sound = $exam.find('.sound'),
+					$ad = $exam.find('.ad'),
+					id = $this.data('key'),
+					is_right = true;
+
+			if($exam.find('.check').length == 0){
+				return;
+			}
+
+			$item.each(function(i){
+				if($.inArray(i, id) < 0){
+					if($(this).hasClass('check')){
+						is_right = false;
+						return false;
+					}
+				}else{
+					if(!$(this).hasClass('check')){
+						is_right = false;
+						return false;
+					}
+				}
+			});
+
+			if(is_right){
+				$('.yes')[0].play();
+				score++;
+			}else{
+				$exam.find('.pa .topic').addClass('no');
+				$('.no')[0].play();
+			}
+
+			if($ad.length > 0){
+				$ad[0].pause();
+				$sound.removeClass('play');
+			}
+
+			$exam.addClass('show');
+			$('.exam-box').scrollTop(0);
+		});
+
+		$('.exam-item .ad').on('onended', function(){
+			$(this).closest('.sound').removeClass('play');
+		});
+
+		$('.exam-item .next').on('click', function(){
+			var $this = $(this),
+					$exam = $this.closest('.exam-item');
+
+			if($exam.index() == 7){
+				switch (score){
+					case 0:
+					case 1:
+					case 2:
+						$('.pop-score').addClass('lv1');
+						break;
+					case 3:
+					case 4:
+						$('.pop-score').addClass('lv2');
+						break;
+					case 5:
+					case 6:
+						$('.pop-score').addClass('lv3');
+						break;
+					case 7:
+					case 8:
+						$('.pop-score').addClass('lv4');
+				}
+
+				//	答对了 score 道题
+				$('.pop-score .p1').text(score);
+				// 保存答对的题数， 并且返回战胜了多少人
+				$.post("/add_score",{score:score},function(e){
+					if( e.status == 1 ) {
+						$('.pop-score .p2').text(e.msg);
+					}
+				})
+				$('.pop-score').trigger('show');
+				$('.pop-score .pop-panel').scrollTop(0);
+			}else{
+				$exam.removeClass('now show').next().addClass('now');
+			}
+
+			$('.exam-box').scrollTop(0);
+		});
+
+		$('.sc').on('click', '.option-item', function(){
+			var $item = $(this);
+
+			if(!$item.hasClass('check')){
+				$item.addClass('check').siblings().removeClass('check');
+			}
+		});
+
+		$('.mc').on('click', '.option-item', function(){
+			var $item = $(this);
+
+			if(!$item.hasClass('check')){
+				$item.addClass('check');
+			}else{
+				$item.removeClass('check')
+			}
+		});
+
+		$('.page6 .start').on('click', function(){
+			$('.bgplay').removeClass('cur act');
+			$('.bgm')[0].pause();
+
+			$('.exam-box').addClass('active');
+		});
+
+		function talkAnim(){
+			var time = 0, h = $('.page2 .am-item').eq(time).outerHeight();
+
+			gsap.to('.page2 .am-box', {duration: 0.2, y: '-=' + h, onComplete: reFn});
+
+			function reFn(){
+				var hh = $('.page2 .am-item').eq(time).outerHeight();
+
+				if(time > 2){
+					gsap.to($('.page2 .am-item').eq(time - 3), {duration: 1, autoAlpha: 0});
+				}
+
+				gsap.to($('.page2 .am-item').eq(time), {scale: 1, autoAlpha: 1});
+
+				if(time < $('.page2 .am-item').length - 1){
+					time++;
+
+					gsap.to('.page2 .am-box', {duration: 1, delay: hh/60, y: '-=' + $('.page2 .am-item').eq(time).outerHeight(), onComplete: reFn});
+				}
+			}
+		}
+
+		var lk = false;
+
+		$('#fullpage').fullpage({
+			verticalCentered: false,
+			afterLoad: function(anchorLink, index){
+				if(index > 1){
+					$(this).addClass('anim');
+				}
+
+				if(index == 2 && !lk){
+					lk = true;
+
+					talkAnim();
+
+					$('.bgplay').addClass('act cur');
+					$('.bgm1')[0].pause();
+					$('.bgm')[0].play();
+				}
+			},
+			onLeave: function(index, nextIndex, direction){
+//			if(direction == 'up'){
+//				return false;
+//			}
+
+//			if(index == 6){
+//				return false;
+//			}
+			}
+		});
+
+		$('.pop-loader').trigger('show');
+
+		$('body').imagesLoaded({ background: '.ldbg' })
+				.always( function( instance ) {
+					var oimg = $('.plimg'),
+							nimg = new Image(),
+							now = 0;
+
+					nimg.onerror = foo;
+					nimg.onload = foo;
+					nimg.src = oimg.eq(now).data('preload');
+
+					function foo(e){
+						if(oimg.eq(now).length == 0){
+							return;
+						}
+
+						oimg.eq(now)[0].src = nimg.src;
+
+						now++;
+
+						$('.pop-loader .p').data('iload', $('.pop-loader .p').data('iload') + 1);
+						$('.pop-loader .p').text(Math.ceil($('.pop-loader .p').data('iload') / instance.progressedCount * 100) +'%');
+
+						if($('.pop-loader .p').data('iload') < instance.progressedCount){
+							nimg.src = oimg.eq(now).data('preload');
+							if(nimg.complete){
+								foo();
+							}else{
+								nimg.onerror = foo;
+								nimg.onload = foo;
+							}
+						}else{
+							setTimeout(function(){
+								$('.pop-loader').trigger('hide');
+								$('.page1').addClass('anim');
+							}, 500);
+						}
+					}
+				})
+				.progress( function( instance, image ) {
+					var count = instance.progressedCount;
+
+					if(image.isLoaded){
+						$('.pop-loader .p').data('iload', $('.pop-loader .p').data('iload') + 1);
+						$('.pop-loader .p').text(Math.ceil($('.pop-loader .p').data('iload') / instance.progressedCount * 100) +'%');
+					}
+				});
+
+
+		function getimg(){
+			var shareContent = $('.pop-score .pop-panel');
+			var scale = 2;
+			var width = shareContent.outerWidth();
+			var height = shareContent.outerHeight();
+			var canvas = document.createElement('canvas');
+
+			$('.pop-score').addClass('shot');
+
+			if($('#shareimg').length > 0){
+				return;
+			}
+
+			canvas.width = width * scale;
+			canvas.height = height * scale;
+			canvas.getContext("2d").scale(scale, scale);
+
+			var opts = {
+				scale: scale,
+				canvas: canvas,
+				logging: true,
+				width: width,
+				height: height
+			};
+
+			setTimeout(function(){
+				$('.pop-score .pop-panel').scrollTop(($('.pop-score .pop-cont').height()-$(window).height())/2);
+				html2canvas(shareContent[0], opts).then(function (canvas) {
+					var shareimg = Canvas2Image.convertToImage(canvas, canvas.width, canvas.height);
+
+					shareimg.id = 'shareimg';
+					$('.pop-score .simg').append(shareimg);
+					$('.pop-score .pop-panel').scrollTop(0);
+				});
+			}, 100);
+		}
+
+///	
+	});
+</script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+<script>
+	$(function(){
+		wx.config({
+			debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			appId: "wx5577f01a4c41ec62", // 必填，公众号的唯一标识
+			timestamp: "1721106398", // 必填，生成签名的时间戳
+			nonceStr: "j3lCxrPzXorVo1xK", // 必填，生成签名的随机串
+			signature: "eb2c88c83d1813ca2538bc3a4222acd33e294985",// 必填，签名
+			jsApiList: [
+				'updateTimelineShareData',
+				'updateAppMessageShareData',
+				'startRecord',
+				'stopRecord',
+				'onVoiceRecordEnd',
+				'playVoice',
+				'stopVoice',
+				'onVoicePlayEnd',
+				'uploadVoice',
+				'pauseVoice',
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+			] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+		});
+		wx.ready(function(){
+
+			wx.checkJsApi({
+				jsApiList: ['updateTimelineShareData','updateAppMessageShareData','onMenuShareTimeline','onMenuShareAppMessage'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+				success: function(res) {
+					console.log(res);
+				}
+			});
+
+			//分享
+
+			wx.onMenuShareTimeline({
+				title: "考考你，曲艺知识知多少", // 分享标题
+				desc: "2020全国非遗曲艺周启幕，让我们一起探索曲艺的奥妙～",
+				link: "http://fy.fractaltest.cn/quyi",
+				imgUrl: "http://fy.fractaltest.cn/Public/static/themes_qyz/img/share.png", // 分享图标
+				trigger: function (res) {
+
+				},
+				success: function () {
+
+				},
+				cancel: function () {
+					// alert("失败")
+				}
+			});
+			wx.onMenuShareAppMessage({
+				title: "考考你，曲艺知识知多少", // 分享标题
+				desc: "2020全国非遗曲艺周启幕，让我们一起探索曲艺的奥妙～",
+				link: "http://fy.fractaltest.cn/quyi",
+				imgUrl: "http://fy.fractaltest.cn/Public/static/themes_qyz/img/share.png", // 分享图标
+
+				trigger: function (res) {
+
+				},
+				success: function () {
+
+				},
+				cancel: function () {
+				}
+			});
+			//share(title, desc, link);
+		});
+		//分享
+
+	})
+</script>
